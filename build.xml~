@@ -33,13 +33,13 @@
  
     <target name="compile-tests">
  
-        <javac srcdir="${unit.test.dir}" destdir="${build.test.dir}" includeantruntime="false">
+        <javac srcdir="${unit.test.dir}" destdir="${build.test.dir}">
             <classpath>
                 <path refid="classpath"/>
                 <pathelement location="${build.prod.dir}"/>
             </classpath>
         </javac>
-        <javac srcdir="${system.test.dir}" destdir="${build.test.dir}" includeantruntime="false">
+        <javac srcdir="${system.test.dir}" destdir="${build.test.dir}">
             <classpath>
                 <path refid="classpath"/>
                 <pathelement location="${build.prod.dir}"/>
